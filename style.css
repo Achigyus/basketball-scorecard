@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cursed_timer{
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+
+.verdana{
+    font-family: 'Verdana Pro Cond', sans-serif;
+}
+
+body{
+    max-width: 100%;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-block-size: 100vh;
+    padding: 0 20px;
+}
+
+.basketball_score_card{
+    background: #1B244A;
+    max-inline-size: 575px;
+    inline-size: 100%;
+}
+
+.basketball_scores{
+    padding: 68px min(14.26%, 82px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+}
+
+.basketball_score_heading{
+    color: #eee;
+    font-size: 40px;
+    line-height: 0.9;
+}
+
+.basketball_score_counter_container{
+    padding: 0 18px;
+    background: #080001;
+    margin-block-start: 21px;
+    margin-block-end: 26px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.basketball_score_count_home, .basketball_score_count_guest{
+    font-size: 90px;
+    line-height: 1.41;
+    text-align: center;
+    color: #F94F6D;
+}
+
+.basketball_score_home, .basketball_score_guest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basketball_score_plus_one, .basketball_score_plus_two, .basketball_score_plus_three{
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    background: transparent;
+    color: #9AABD8;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.new_game_btn{
+    display: block;
+    margin: auto;
+    padding: 8px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #F94F6D;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 580px) {
+    .basketball_scores{
+        flex-direction: column;
+
+    }
+}

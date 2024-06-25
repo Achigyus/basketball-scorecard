@@ -5,9 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BasketBall Scorecard</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/verdana-pro-cond" rel="stylesheet">
 </head>
 <body>
-    <p>Code goes here</p>
+    <div class="container">
+        <div class="basketball_score_card">
+            <div class="basketball_scores">
+                <div class="basketball_score_home">
+                    <h2 class="basketball_score_heading verdana">HOME</h2>
+                    <div class="basketball_score_counter_container">
+                        <p class="basketball_score_count_home cursed_timer" id="basketball_score_count_home">0</p>
+                    </div>
+                    <div class="basketball_score_buttons">
+                        <button class="basketball_score_plus_one cursed_timer" id="basketball_score_plus_one_home">+1</button>
+                        <button class="basketball_score_plus_two cursed_timer" id="basketball_score_plus_two_home">+2</button>
+                        <button class="basketball_score_plus_three cursed_timer" id="basketball_score_plus_three_home">+3</button>
+                    </div>
+                </div>
+    
+                <div class="basketball_score_guest">
+                    <h2 class="basketball_score_heading verdana">GUEST</h2>
+                    <div class="basketball_score_counter_container">
+                        <p class="basketball_score_count_guest cursed_timer" id="basketball_score_count_guest">0</p>
+                    </div>
+                    <div class="basketball_score_buttons">
+                        <button class="basketball_score_plus_one cursed_timer" id="basketball_score_plus_one_guest">+1</button>
+                        <button class="basketball_score_plus_two cursed_timer" id="basketball_score_plus_two_guest">+2</button>
+                        <button class="basketball_score_plus_three cursed_timer" id="basketball_score_plus_three_guest">+3</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="new_game_btn verdana" id="new_game_btn">NEW GAME</button>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
